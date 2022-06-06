@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
 
-specVersion: "2.5"
+specVersion: '2.5'
 metadata:
-  name: ui
+  name: demo.easy.carrier
 type: application
 framework:
   name: SAPUI5
@@ -30,7 +30,7 @@ server:
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
-          - path: /here
+          - path: /sap/opu/odata
             url: http://localhost
     - name: sap-fe-mockserver
       beforeMiddleware: csp
@@ -43,5 +43,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: ui
+        component: demo.easy.carrier
         ui5Theme: sap_fiori_3

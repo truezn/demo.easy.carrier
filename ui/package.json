@@ -24,7 +24,7 @@
     "preinstall": "npm install -g @ui5/cli",
     "start": "node server.mjs",
     "start:mockserver": "cd ./mockserver && cds watch",
-    "start:local": "fiori run --config ./ui5-local.yaml --open test/flpSandboxMockServer.html",
+    "start:local": "fiori run --config ./ui5-local.yaml --open test/flpSandbox.html",
     "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo",
     "sonar": "npm run sonar:grunt",
     "sonar:grunt": "grunt sonar",
@@ -38,6 +38,10 @@
       "@sap/ux-ui5-tooling",
       "@sap/ux-ui5-fe-mockserver-middleware"
     ]
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": "^6"
   },
   "sapuxLayer": "CUSTOMER_BASE"
 }
