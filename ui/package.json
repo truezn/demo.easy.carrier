@@ -8,7 +8,6 @@
     "openui5",
     "sapui5"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@ui5/cli": "^2.14.1",
     "@sap/ux-ui5-tooling": "1",
@@ -23,15 +22,10 @@
   "scripts": {
     "preinstall": "npm install -g @ui5/cli",
     "start": "node server.mjs",
-    "start:mockserver": "cd ./mockserver && cds watch",
     "start:local": "fiori run --config ./ui5-local.yaml --open test/flpSandbox.html",
     "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo",
-    "sonar": "npm run sonar:grunt",
-    "sonar:grunt": "grunt sonar",
     "test": "npm run lint && npm run test:ci && npm run sonar",
-    "lint": "eslint -f codeframe webapp",
-    "test:ci": "karma start karma-ci.conf.js",
-    "test:dev": "karma start"
+    "lint": "eslint -f codeframe webapp"
   },
   "ui5": {
     "dependencies": [
@@ -42,6 +36,5 @@
   "engines": {
     "node": ">=14",
     "npm": "^6"
-  },
-  "sapuxLayer": "CUSTOMER_BASE"
+  }
 }
