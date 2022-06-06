@@ -1,0 +1,1956 @@
+<?xml version="1.0"?>
+<edmx:Edmx
+xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+Version="1.0"
+xmlns:sap="http://www.sap.com/Protocols/SAPData">
+<edmx:Reference
+xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml">
+<edmx:Include
+Alias="Capabilities"
+Namespace="Org.OData.Capabilities.V1">
+</edmx:Include>
+</edmx:Reference>
+<edmx:Reference
+xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+<edmx:Include
+Alias="Common"
+Namespace="com.sap.vocabularies.Common.v1">
+</edmx:Include>
+</edmx:Reference>
+<edmx:Reference
+xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+<edmx:Include
+Alias="Core"
+Namespace="Org.OData.Core.V1">
+</edmx:Include>
+</edmx:Reference>
+<edmx:Reference
+xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+<edmx:Include
+Alias="UI"
+Namespace="com.sap.vocabularies.UI.v1">
+</edmx:Include>
+</edmx:Reference>
+<edmx:Reference
+xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Validation.V1.xml">
+<edmx:Include
+Alias="Validation"
+Namespace="Org.OData.Validation.V1">
+</edmx:Include>
+</edmx:Reference>
+<edmx:DataServices
+m:DataServiceVersion="1.0"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+<Schema
+Namespace="ShipmentAdviceService"
+xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+<EntityType Name="ShipmentAdvice">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="createdAt"
+    Type="Edm.DateTimeOffset"
+    Precision="7">
+</Property>
+<Property
+Name="createdBy"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="modifiedAt"
+Type="Edm.DateTimeOffset"
+Precision="7"
+ConcurrencyMode="Fixed">
+</Property>
+<Property
+Name="modifiedBy"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="Id"
+Type="Edm.Guid"
+Nullable="false">
+</Property>
+<Property
+Name="SupplierLbnId"
+Type="Edm.String">
+</Property>
+<Property
+Name="ShipmentAdviceNo"
+Type="Edm.String"
+MaxLength="20">
+</Property>
+<Property
+Name="ShipmentType_Code"
+Type="Edm.String">
+</Property>
+<Property
+Name="Status"
+Type="Edm.Int32">
+</Property>
+<Property
+Name="TransportationMode_Code"
+Type="Edm.String">
+</Property>
+<Property
+Name="ContainerNo"
+Type="Edm.String"
+MaxLength="40">
+</Property>
+<Property
+Name="VesselName"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="FlightNo"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="TruckID"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="MobilePhone"
+Type="Edm.String"
+MaxLength="40">
+</Property>
+<Property
+Name="TruckLicensePlate"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="ParcelID"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="ExternalParcelID"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="SupplierReferenceNumber"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="PlannedDepartureBizTimestamp"
+Type="Edm.DateTimeOffset">
+</Property>
+<Property
+Name="PlannedDepartureBizTimeZone"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="PlannedDepartureBizUTCTimestamp"
+Type="Edm.DateTimeOffset">
+</Property>
+<Property
+Name="PlannedDepartureLocation_Id"
+Type="Edm.Guid">
+</Property>
+<Property
+Name="PlannedArrivalBizTimestamp"
+Type="Edm.DateTimeOffset">
+</Property>
+<Property
+Name="PlannedArrivalBizTimeZone"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="PlannedArrivalBizUTCTimestamp"
+Type="Edm.DateTimeOffset">
+</Property>
+<Property
+Name="PlannedArrivalLocation_Id"
+Type="Edm.Guid">
+</Property>
+<Property
+Name="Customer_Id"
+Type="Edm.Guid">
+</Property>
+<Property
+Name="Carrier_Id"
+Type="Edm.Guid">
+</Property>
+<NavigationProperty
+Name="ShipmentType"
+Relationship="ShipmentAdviceService.ShipmentAdvice_ShipmentType"
+FromRole="ShipmentAdvice"
+ToRole="LbnCodeList">
+</NavigationProperty>
+<NavigationProperty
+Name="TransportationMode"
+Relationship="ShipmentAdviceService.ShipmentAdvice_TransportationMode"
+FromRole="ShipmentAdvice"
+ToRole="LbnCodeList">
+</NavigationProperty>
+<NavigationProperty
+Name="PlannedDepartureLocation"
+Relationship="ShipmentAdviceService.ShipmentAdvice_PlannedDepartureLocation"
+FromRole="ShipmentAdvice"
+ToRole="LocationMaster">
+</NavigationProperty>
+<NavigationProperty
+Name="PlannedArrivalLocation"
+Relationship="ShipmentAdviceService.ShipmentAdvice_PlannedArrivalLocation"
+FromRole="ShipmentAdvice"
+ToRole="LocationMaster">
+</NavigationProperty>
+<NavigationProperty
+Name="Customer"
+Relationship="ShipmentAdviceService.ShipmentAdvice_Customer"
+FromRole="ShipmentAdvice"
+ToRole="Party">
+</NavigationProperty>
+<NavigationProperty
+Name="Carrier"
+Relationship="ShipmentAdviceService.ShipmentAdvice_Carrier"
+FromRole="ShipmentAdvice"
+ToRole="Party">
+</NavigationProperty>
+<NavigationProperty
+Name="CustomerPOItems"
+Relationship="ShipmentAdviceService.Item_ShipmentAdviceRef"
+FromRole="ShipmentAdvice"
+ToRole="Item">
+</NavigationProperty>
+<NavigationProperty
+Name="CarrierReferenceDocuments"
+Relationship="ShipmentAdviceService.DocumentReference_ShipmentAdviceRef"
+FromRole="ShipmentAdvice"
+ToRole="DocumentReference">
+</NavigationProperty>
+</EntityType>
+<EntityType Name="LocationSharing">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="LocationAltkey"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="CoownerLbnId"
+Type="Edm.String"
+MaxLength="11">
+</Property>
+</EntityType>
+<EntityType Name="Party">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="TenantId"
+Type="Edm.Guid">
+</Property>
+<Property
+Name="LbnId"
+Type="Edm.String">
+</Property>
+<Property
+Name="BpName"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="BpType"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="ContactPerson_Id"
+Type="Edm.Guid">
+</Property>
+<NavigationProperty
+Name="ContactPerson"
+Relationship="ShipmentAdviceService.Party_ContactPerson"
+FromRole="Party"
+ToRole="ContactDetail">
+</NavigationProperty>
+</EntityType>
+<EntityType Name="Item">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="Altkey"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="PurchaseOrderNo"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="ItemNo"
+Type="Edm.String"
+MaxLength="40">
+</Property>
+<Property
+Name="BuyerLbnId"
+Type="Edm.String">
+</Property>
+<Property
+Name="SupplierId"
+Type="Edm.String"
+MaxLength="60">
+</Property>
+<Property
+Name="SupplierLbnId"
+Type="Edm.String">
+</Property>
+<Property
+Name="SupplierLocationType_Code"
+Type="Edm.String">
+</Property>
+<Property
+Name="PlannedDeliveryDate"
+Type="Edm.DateTimeOffset">
+</Property>
+<Property
+Name="InitialPlannedDeliveryDate"
+Type="Edm.DateTimeOffset">
+</Property>
+<Property
+Name="Incoterms_Code"
+Type="Edm.String">
+</Property>
+<Property
+Name="IncotermsVersion"
+Type="Edm.String"
+MaxLength="4">
+</Property>
+<Property
+Name="IncotermsLocation"
+Type="Edm.String"
+MaxLength="28">
+</Property>
+<Property
+Name="MaterialNumber"
+Type="Edm.String"
+MaxLength="60">
+</Property>
+<Property
+Name="MaterialDescription"
+Type="Edm.String">
+</Property>
+<Property
+Name="ReceivingPlantId"
+Type="Edm.String"
+MaxLength="100">
+</Property>
+<Property
+Name="ReceivingLocationType_Code"
+Type="Edm.String">
+</Property>
+<Property
+Name="ReceivingPlantDescription"
+Type="Edm.String">
+</Property>
+<Property
+Name="ReceivingPlantAddress"
+Type="Edm.String"
+MaxLength="241">
+</Property>
+<Property
+Name="ConfirmedQuantity"
+Type="Edm.Decimal"
+Precision="31"
+Scale="14">
+</Property>
+<Property
+Name="ConfirmedQuantityUoM"
+Type="Edm.String"
+MaxLength="3">
+</Property>
+<Property
+Name="ReferenceId"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="ShipmentAdviceRef_Id"
+Type="Edm.Guid">
+</Property>
+<NavigationProperty
+Name="SupplierLocationType"
+Relationship="ShipmentAdviceService.Item_SupplierLocationType"
+FromRole="Item"
+ToRole="LbnCodeList">
+</NavigationProperty>
+<NavigationProperty
+Name="Incoterms"
+Relationship="ShipmentAdviceService.Item_Incoterms"
+FromRole="Item"
+ToRole="LbnCodeList">
+</NavigationProperty>
+<NavigationProperty
+Name="ReceivingLocationType"
+Relationship="ShipmentAdviceService.Item_ReceivingLocationType"
+FromRole="Item"
+ToRole="LbnCodeList">
+</NavigationProperty>
+<NavigationProperty
+Name="ShipmentAdviceRef"
+Relationship="ShipmentAdviceService.Item_ShipmentAdviceRef"
+FromRole="Item"
+ToRole="ShipmentAdvice">
+</NavigationProperty>
+</EntityType>
+<EntityType Name="LbnCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="LocationMaster">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="TenantId"
+Type="Edm.Guid">
+</Property>
+<Property
+Name="LocationAltkey"
+Type="Edm.String"
+MaxLength="255">
+</Property>
+<Property
+Name="LocationName"
+Type="Edm.String">
+</Property>
+<Property
+Name="LocationDetail_Id"
+Type="Edm.Guid">
+</Property>
+<NavigationProperty
+Name="LocationDetail"
+Relationship="ShipmentAdviceService.LocationMaster_LocationDetail"
+FromRole="LocationMaster"
+ToRole="LocationDetail">
+</NavigationProperty>
+</EntityType>
+<EntityType Name="IncotermsCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="TransportModeCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="ExecutionStatusCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="ShipmentTypeCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="DocumentReferenceTypeCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="TrackedObjectTypeCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="TimeZoneCodeList">
+    <Key>
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Code"
+    Type="Edm.String"
+    Nullable="false">
+</Property>
+<Property
+Name="Name"
+Type="Edm.String">
+</Property>
+</EntityType>
+<EntityType Name="TimeZoneDateTime">
+    <Key>
+        <PropertyRef Name="UTCDateTime">
+        </PropertyRef>
+        <PropertyRef Name="DisplayDateTime">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="UTCDateTime"
+    Type="Edm.DateTimeOffset"
+    Nullable="false">
+</Property>
+<Property
+Name="DisplayDateTime"
+Type="Edm.String"
+Nullable="false">
+</Property>
+</EntityType>
+<EntityType Name="DocumentReference">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="ReferenceType_Code"
+Type="Edm.String">
+</Property>
+<Property
+Name="ReferenceId"
+Type="Edm.String"
+MaxLength="35">
+</Property>
+<Property
+Name="ShipmentAdviceRef_Id"
+Type="Edm.Guid">
+</Property>
+<NavigationProperty
+Name="ReferenceType"
+Relationship="ShipmentAdviceService.DocumentReference_ReferenceType"
+FromRole="DocumentReference"
+ToRole="LbnCodeList">
+</NavigationProperty>
+<NavigationProperty
+Name="ShipmentAdviceRef"
+Relationship="ShipmentAdviceService.DocumentReference_ShipmentAdviceRef"
+FromRole="DocumentReference"
+ToRole="ShipmentAdvice">
+</NavigationProperty>
+</EntityType>
+<EntityType Name="ContactDetail">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="ContactName"
+Type="Edm.String"
+MaxLength="80">
+</Property>
+<Property
+Name="ContactEmail"
+Type="Edm.String"
+MaxLength="241">
+</Property>
+<Property
+Name="ContactPhone"
+Type="Edm.String"
+MaxLength="40">
+</Property>
+</EntityType>
+<EntityType Name="LocationDetail">
+    <Key>
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Key>
+    <Property
+    Name="Id"
+    Type="Edm.Guid"
+    Nullable="false">
+</Property>
+<Property
+Name="ObjectTypeDescription"
+Type="Edm.String"
+MaxLength="300">
+</Property>
+<Property
+Name="SourceSystem"
+Type="Edm.String"
+MaxLength="100">
+</Property>
+<Property
+Name="ExternalId"
+Type="Edm.String"
+MaxLength="100">
+</Property>
+<Property
+Name="Address"
+Type="Edm.String">
+</Property>
+</EntityType>
+<Association Name="ShipmentAdvice_ShipmentType">
+    <End
+    Type="ShipmentAdviceService.ShipmentAdvice"
+    Multiplicity="*"
+    Role="ShipmentAdvice">
+</End>
+<End
+Type="ShipmentAdviceService.LbnCodeList"
+Multiplicity="0..1"
+Role="LbnCodeList">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LbnCodeList">
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="ShipmentAdvice">
+        <PropertyRef Name="ShipmentType_Code">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="ShipmentAdvice_TransportationMode">
+    <End
+    Type="ShipmentAdviceService.ShipmentAdvice"
+    Multiplicity="*"
+    Role="ShipmentAdvice">
+</End>
+<End
+Type="ShipmentAdviceService.LbnCodeList"
+Multiplicity="0..1"
+Role="LbnCodeList">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LbnCodeList">
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="ShipmentAdvice">
+        <PropertyRef Name="TransportationMode_Code">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="ShipmentAdvice_PlannedDepartureLocation">
+    <End
+    Type="ShipmentAdviceService.ShipmentAdvice"
+    Multiplicity="*"
+    Role="ShipmentAdvice">
+</End>
+<End
+Type="ShipmentAdviceService.LocationMaster"
+Multiplicity="0..1"
+Role="LocationMaster">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LocationMaster">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="ShipmentAdvice">
+        <PropertyRef Name="PlannedDepartureLocation_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="ShipmentAdvice_PlannedArrivalLocation">
+    <End
+    Type="ShipmentAdviceService.ShipmentAdvice"
+    Multiplicity="*"
+    Role="ShipmentAdvice">
+</End>
+<End
+Type="ShipmentAdviceService.LocationMaster"
+Multiplicity="0..1"
+Role="LocationMaster">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LocationMaster">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="ShipmentAdvice">
+        <PropertyRef Name="PlannedArrivalLocation_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="ShipmentAdvice_Customer">
+    <End
+    Type="ShipmentAdviceService.ShipmentAdvice"
+    Multiplicity="*"
+    Role="ShipmentAdvice">
+</End>
+<End
+Type="ShipmentAdviceService.Party"
+Multiplicity="0..1"
+Role="Party">
+</End>
+<ReferentialConstraint>
+    <Principal Role="Party">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="ShipmentAdvice">
+        <PropertyRef Name="Customer_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="ShipmentAdvice_Carrier">
+    <End
+    Type="ShipmentAdviceService.ShipmentAdvice"
+    Multiplicity="*"
+    Role="ShipmentAdvice">
+</End>
+<End
+Type="ShipmentAdviceService.Party"
+Multiplicity="0..1"
+Role="Party">
+</End>
+<ReferentialConstraint>
+    <Principal Role="Party">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="ShipmentAdvice">
+        <PropertyRef Name="Carrier_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="Party_ContactPerson">
+    <End
+    Type="ShipmentAdviceService.Party"
+    Multiplicity="*"
+    Role="Party">
+</End>
+<End
+Type="ShipmentAdviceService.ContactDetail"
+Multiplicity="0..1"
+Role="ContactDetail">
+</End>
+<ReferentialConstraint>
+    <Principal Role="ContactDetail">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="Party">
+        <PropertyRef Name="ContactPerson_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="Item_SupplierLocationType">
+    <End
+    Type="ShipmentAdviceService.Item"
+    Multiplicity="*"
+    Role="Item">
+</End>
+<End
+Type="ShipmentAdviceService.LbnCodeList"
+Multiplicity="0..1"
+Role="LbnCodeList">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LbnCodeList">
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="Item">
+        <PropertyRef Name="SupplierLocationType_Code">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="Item_Incoterms">
+    <End
+    Type="ShipmentAdviceService.Item"
+    Multiplicity="*"
+    Role="Item">
+</End>
+<End
+Type="ShipmentAdviceService.LbnCodeList"
+Multiplicity="0..1"
+Role="LbnCodeList">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LbnCodeList">
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="Item">
+        <PropertyRef Name="Incoterms_Code">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="Item_ReceivingLocationType">
+    <End
+    Type="ShipmentAdviceService.Item"
+    Multiplicity="*"
+    Role="Item">
+</End>
+<End
+Type="ShipmentAdviceService.LbnCodeList"
+Multiplicity="0..1"
+Role="LbnCodeList">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LbnCodeList">
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="Item">
+        <PropertyRef Name="ReceivingLocationType_Code">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="Item_ShipmentAdviceRef">
+    <End
+    Type="ShipmentAdviceService.Item"
+    Multiplicity="*"
+    Role="Item">
+</End>
+<End
+Type="ShipmentAdviceService.ShipmentAdvice"
+Multiplicity="0..1"
+Role="ShipmentAdvice">
+<OnDelete Action="Cascade">
+</OnDelete>
+</End>
+<ReferentialConstraint>
+    <Principal Role="ShipmentAdvice">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="Item">
+        <PropertyRef Name="ShipmentAdviceRef_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="LocationMaster_LocationDetail">
+    <End
+    Type="ShipmentAdviceService.LocationMaster"
+    Multiplicity="*"
+    Role="LocationMaster">
+</End>
+<End
+Type="ShipmentAdviceService.LocationDetail"
+Multiplicity="0..1"
+Role="LocationDetail">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LocationDetail">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="LocationMaster">
+        <PropertyRef Name="LocationDetail_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DocumentReference_ReferenceType">
+    <End
+    Type="ShipmentAdviceService.DocumentReference"
+    Multiplicity="*"
+    Role="DocumentReference">
+</End>
+<End
+Type="ShipmentAdviceService.LbnCodeList"
+Multiplicity="0..1"
+Role="LbnCodeList">
+</End>
+<ReferentialConstraint>
+    <Principal Role="LbnCodeList">
+        <PropertyRef Name="Code">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="DocumentReference">
+        <PropertyRef Name="ReferenceType_Code">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<Association Name="DocumentReference_ShipmentAdviceRef">
+    <End
+    Type="ShipmentAdviceService.DocumentReference"
+    Multiplicity="*"
+    Role="DocumentReference">
+</End>
+<End
+Type="ShipmentAdviceService.ShipmentAdvice"
+Multiplicity="0..1"
+Role="ShipmentAdvice">
+<OnDelete Action="Cascade">
+</OnDelete>
+</End>
+<ReferentialConstraint>
+    <Principal Role="ShipmentAdvice">
+        <PropertyRef Name="Id">
+        </PropertyRef>
+    </Principal>
+    <Dependent Role="DocumentReference">
+        <PropertyRef Name="ShipmentAdviceRef_Id">
+        </PropertyRef>
+    </Dependent>
+</ReferentialConstraint>
+</Association>
+<EntityContainer
+Name="EntityContainer"
+m:IsDefaultEntityContainer="true">
+<EntitySet
+Name="ShipmentAdvice"
+EntityType="ShipmentAdviceService.ShipmentAdvice">
+</EntitySet>
+<EntitySet
+Name="LocationSharing"
+EntityType="ShipmentAdviceService.LocationSharing">
+</EntitySet>
+<EntitySet
+Name="Party"
+EntityType="ShipmentAdviceService.Party">
+</EntitySet>
+<EntitySet
+Name="Item"
+EntityType="ShipmentAdviceService.Item">
+</EntitySet>
+<EntitySet
+Name="LbnCodeList"
+EntityType="ShipmentAdviceService.LbnCodeList">
+</EntitySet>
+<EntitySet
+Name="LocationMaster"
+EntityType="ShipmentAdviceService.LocationMaster">
+</EntitySet>
+<EntitySet
+Name="IncotermsCodeList"
+EntityType="ShipmentAdviceService.IncotermsCodeList">
+</EntitySet>
+<EntitySet
+Name="TransportModeCodeList"
+EntityType="ShipmentAdviceService.TransportModeCodeList">
+</EntitySet>
+<EntitySet
+Name="ExecutionStatusCodeList"
+EntityType="ShipmentAdviceService.ExecutionStatusCodeList">
+</EntitySet>
+<EntitySet
+Name="ShipmentTypeCodeList"
+EntityType="ShipmentAdviceService.ShipmentTypeCodeList">
+</EntitySet>
+<EntitySet
+Name="DocumentReferenceTypeCodeList"
+EntityType="ShipmentAdviceService.DocumentReferenceTypeCodeList">
+</EntitySet>
+<EntitySet
+Name="TrackedObjectTypeCodeList"
+EntityType="ShipmentAdviceService.TrackedObjectTypeCodeList">
+</EntitySet>
+<EntitySet
+Name="TimeZoneCodeList"
+EntityType="ShipmentAdviceService.TimeZoneCodeList">
+</EntitySet>
+<EntitySet
+Name="TimeZoneDateTime"
+EntityType="ShipmentAdviceService.TimeZoneDateTime">
+</EntitySet>
+<EntitySet
+Name="DocumentReference"
+EntityType="ShipmentAdviceService.DocumentReference">
+</EntitySet>
+<EntitySet
+Name="ContactDetail"
+EntityType="ShipmentAdviceService.ContactDetail">
+</EntitySet>
+<EntitySet
+Name="LocationDetail"
+EntityType="ShipmentAdviceService.LocationDetail">
+</EntitySet>
+<AssociationSet
+Name="ShipmentAdvice_ShipmentType"
+Association="ShipmentAdviceService.ShipmentAdvice_ShipmentType">
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+<End
+EntitySet="LbnCodeList"
+Role="LbnCodeList">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="ShipmentAdvice_TransportationMode"
+Association="ShipmentAdviceService.ShipmentAdvice_TransportationMode">
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+<End
+EntitySet="LbnCodeList"
+Role="LbnCodeList">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="ShipmentAdvice_PlannedDepartureLocation"
+Association="ShipmentAdviceService.ShipmentAdvice_PlannedDepartureLocation">
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+<End
+EntitySet="LocationMaster"
+Role="LocationMaster">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="ShipmentAdvice_PlannedArrivalLocation"
+Association="ShipmentAdviceService.ShipmentAdvice_PlannedArrivalLocation">
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+<End
+EntitySet="LocationMaster"
+Role="LocationMaster">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="ShipmentAdvice_Customer"
+Association="ShipmentAdviceService.ShipmentAdvice_Customer">
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+<End
+EntitySet="Party"
+Role="Party">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="ShipmentAdvice_Carrier"
+Association="ShipmentAdviceService.ShipmentAdvice_Carrier">
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+<End
+EntitySet="Party"
+Role="Party">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="Party_ContactPerson"
+Association="ShipmentAdviceService.Party_ContactPerson">
+<End
+EntitySet="Party"
+Role="Party">
+</End>
+<End
+EntitySet="ContactDetail"
+Role="ContactDetail">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="Item_SupplierLocationType"
+Association="ShipmentAdviceService.Item_SupplierLocationType">
+<End
+EntitySet="Item"
+Role="Item">
+</End>
+<End
+EntitySet="LbnCodeList"
+Role="LbnCodeList">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="Item_Incoterms"
+Association="ShipmentAdviceService.Item_Incoterms">
+<End
+EntitySet="Item"
+Role="Item">
+</End>
+<End
+EntitySet="LbnCodeList"
+Role="LbnCodeList">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="Item_ReceivingLocationType"
+Association="ShipmentAdviceService.Item_ReceivingLocationType">
+<End
+EntitySet="Item"
+Role="Item">
+</End>
+<End
+EntitySet="LbnCodeList"
+Role="LbnCodeList">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="Item_ShipmentAdviceRef"
+Association="ShipmentAdviceService.Item_ShipmentAdviceRef">
+<End
+EntitySet="Item"
+Role="Item">
+</End>
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="LocationMaster_LocationDetail"
+Association="ShipmentAdviceService.LocationMaster_LocationDetail">
+<End
+EntitySet="LocationMaster"
+Role="LocationMaster">
+</End>
+<End
+EntitySet="LocationDetail"
+Role="LocationDetail">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="DocumentReference_ReferenceType"
+Association="ShipmentAdviceService.DocumentReference_ReferenceType">
+<End
+EntitySet="DocumentReference"
+Role="DocumentReference">
+</End>
+<End
+EntitySet="LbnCodeList"
+Role="LbnCodeList">
+</End>
+</AssociationSet>
+<AssociationSet
+Name="DocumentReference_ShipmentAdviceRef"
+Association="ShipmentAdviceService.DocumentReference_ShipmentAdviceRef">
+<End
+EntitySet="DocumentReference"
+Role="DocumentReference">
+</End>
+<End
+EntitySet="ShipmentAdvice"
+Role="ShipmentAdvice">
+</End>
+</AssociationSet>
+<FunctionImport
+Name="GetTimeZoneDateTime"
+ReturnType="ShipmentAdviceService.TimeZoneDateTime"
+EntitySet="TimeZoneDateTime"
+m:HttpMethod="GET">
+<Parameter
+Name="sourceTimeZone"
+Type="Edm.String"
+Mode="In"
+Nullable="false">
+</Parameter>
+<Parameter
+Name="destinationTimeZone"
+Type="Edm.String"
+Mode="In"
+Nullable="false">
+</Parameter>
+<Parameter
+Name="sourceTimestamp"
+Type="Edm.DateTimeOffset"
+Mode="In"
+Nullable="false">
+</Parameter>
+</FunctionImport>
+</EntityContainer>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.ShipmentAdvice/createdAt">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="UI.HiddenFilter"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Immutable"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Computed"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Common.Label"
+String="{i18n&gt;CreatedAt}">
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.ShipmentAdvice/createdBy">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="UI.HiddenFilter"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Immutable"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Computed"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Description"
+String="{i18n&gt;UserID.Description}">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Common.Label"
+String="{i18n&gt;CreatedBy}">
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.ShipmentAdvice/modifiedAt">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="UI.HiddenFilter"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Computed"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Common.Label"
+String="{i18n&gt;ChangedAt}">
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.ShipmentAdvice/modifiedBy">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="UI.HiddenFilter"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Computed"
+Bool="true">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.Description"
+String="{i18n&gt;UserID.Description}">
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Common.Label"
+String="{i18n&gt;ChangedBy}">
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.ShipmentAdvice/Status">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Validation.AllowedValues">
+<Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+    <Record
+    xmlns="http://docs.oasis-open.org/odata/ns/edm"
+    Type="Validation.AllowedValue">
+    <Annotation
+    xmlns="http://docs.oasis-open.org/odata/ns/edm"
+    Term="Core.SymbolicName"
+    String="NotStarted">
+</Annotation>
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Value"
+Int="2">
+</PropertyValue>
+</Record>
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Validation.AllowedValue">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.SymbolicName"
+String="InTransit">
+</Annotation>
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Value"
+Int="3">
+</PropertyValue>
+</Record>
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Validation.AllowedValue">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.SymbolicName"
+String="Completed">
+</Annotation>
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Value"
+Int="4">
+</PropertyValue>
+</Record>
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Validation.AllowedValue">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Core.SymbolicName"
+String="Canceled">
+</Annotation>
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Value"
+Int="6">
+</PropertyValue>
+</Record>
+</Collection>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/Party">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/Item">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/LbnCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/LocationMaster">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/IncotermsCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/TransportModeCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/ExecutionStatusCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/ShipmentTypeCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/DocumentReferenceTypeCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/TrackedObjectTypeCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/TimeZoneCodeList">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+<Annotations
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Target="ShipmentAdviceService.EntityContainer/TimeZoneDateTime">
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.DeleteRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.DeleteRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Deletable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.InsertRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.InsertRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Insertable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+<Annotation
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Term="Capabilities.UpdateRestrictions">
+<Record
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Type="Capabilities.UpdateRestrictionsType">
+<PropertyValue
+xmlns="http://docs.oasis-open.org/odata/ns/edm"
+Property="Updatable"
+Bool="false">
+</PropertyValue>
+</Record>
+</Annotation>
+</Annotations>
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>
