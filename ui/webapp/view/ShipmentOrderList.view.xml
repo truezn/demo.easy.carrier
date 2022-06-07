@@ -1,17 +1,379 @@
 <mvc:View
 		controllerName="demo.easy.carrier.controller.ShipmentOrderList"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m"
 		xmlns:mvc="sap.ui.core.mvc"
-		displayBlock="true"
-		xmlns="sap.m">
-	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page
-						id="page"
-						title="{i18n>title}">
-					<content />
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+		xmlns:f="sap.f"
+		xmlns:smartvariants="sap.ui.comp.smartvariants"
+		xmlns:table="sap.ui.table"
+		xmlns:smartfilterbar="sap.ui.comp.smartfilterbar"
+		xmlns:smarttable="sap.ui.comp.smarttable"
+		xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<f:DynamicPage id="dynamicPage">
+		<f:title>
+			<f:DynamicPageTitle id="dynamicPageTitle">
+				<f:heading>
+					<smartvariants:SmartVariantManagement
+							id="pageSmartVariant"
+							persistencyKey="shipmentAdviceSM"
+							showShare="true"
+							useProvidedNavigationProperties="true"
+							navigationProperties="CustomerPOItems"
+							showExecuteOnSelection="false" />
+				</f:heading>
+				<f:snappedContent></f:snappedContent>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader id="dynamicPageHeader">
+				<f:content>
+					<smartfilterbar:SmartFilterBar
+							id="shipmentAdviceListFilterBar"
+							useToolbar="false"
+							entitySet="ShipmentAdvice"
+							smartVariant="pageSmartVariant"
+							beforeVariantFetch=".onBeforeVariantFetch"
+							afterVariantLoad=".onAfterVariantLoad"
+							persistencyKey="lbn.shipment.advice.smartfilterbar">
+						<smartfilterbar:controlConfiguration>
+							<smartfilterbar:ControlConfiguration
+									id="customerBpName"
+									key="Customer.BpName"
+									index="1"
+									label="{i18n>shipmentLists.customerName}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC" />
+							<smartfilterbar:ControlConfiguration
+									id="shipmentAdviceNo"
+									key="ShipmentAdviceNo"
+									index="2"
+									label="{i18n>shipmentLists.shipmentAdviceNo}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC" />
+							<smartfilterbar:ControlConfiguration
+									id="purchaseOrderNo"
+									key="PurchaseOrderNo"
+									index="3"
+									label="{i18n>shipmentLists.purchaseOrderNo}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC">
+								<smartfilterbar:customControl>
+									<MultiInput
+											id="CustomerPOItemsInput"
+											valueHelpOnly="true"
+											valueHelpRequest=".onCusPOItemsRequested" />
+								</smartfilterbar:customControl>
+							</smartfilterbar:ControlConfiguration>
+							<smartfilterbar:ControlConfiguration
+									id="transportMode"
+									key="TransportationModeCode"
+									index="4"
+									controlType="dropDownList"
+									filterType="multiple"
+									label="{i18n>shipmentLists.transportMode}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC">
+								<smartfilterbar:customControl>
+									<MultiComboBox
+											selectedKeys="{view>/selectedTransportModeKeys}"
+											items="{view>/TransportModeCodeList}">
+										<core:Item
+												key="{view>Code}"
+												text="{view>Name}" />
+									</MultiComboBox>
+								</smartfilterbar:customControl>
+							</smartfilterbar:ControlConfiguration>
+
+							<smartfilterbar:ControlConfiguration
+									id="plannedDepartTimestamp"
+									key="PlannedDepartureBizTimestamp"
+									index="5"
+									label="{i18n>shipmentLists.plannedDepartTime}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC" />
+							<smartfilterbar:ControlConfiguration
+									id="plannedArrivalTimestamp"
+									key="PlannedArrivalBizTimestamp"
+									index="6"
+									label="{i18n>shipmentLists.plannedArrivalTime}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC" />
+							<smartfilterbar:ControlConfiguration
+									id="status"
+									key="Status"
+									controlType="dropDownList"
+									index="7"
+									label="{i18n>shipmentLists.status}"
+									visibleInAdvancedArea="true"
+									groupId="_BASIC">
+								<smartfilterbar:customControl>
+									<MultiComboBox
+											selectedKeys="{view>/selectedStatusKeys}"
+											items="{view>/ExecutionStatusCodeList}">
+										<core:Item
+												key="{view>Code}"
+												text="{view>Name}" />
+									</MultiComboBox>
+								</smartfilterbar:customControl>
+							</smartfilterbar:ControlConfiguration>
+							<smartfilterbar:ControlConfiguration
+									id="carrierBpName"
+									key="Carrier.BpName"
+									index="8"
+									label="{i18n>shipmentLists.carrier}"
+									visibleInAdvancedArea="false" />
+							<smartfilterbar:ControlConfiguration
+									id="planDepLoca"
+									key="PlannedDepartureLocation.LocationDescription"
+									index="9"
+									label="{i18n>shipmentLists.plannedDepartureLocation}"
+									visibleInAdvancedArea="false" />
+							<smartfilterbar:ControlConfiguration
+									id="planArriLoca"
+									key="PlannedArrivalLocation.LocationDescription"
+									index="10"
+									label="{i18n>shipmentLists.plannedArrivalLocation}"
+									visibleInAdvancedArea="false" />
+						</smartfilterbar:controlConfiguration>
+					</smartfilterbar:SmartFilterBar>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+
+		<f:content>
+			<smarttable:SmartTable
+					id="shipmentListsSmartTable"
+					entitySet="ShipmentAdvice"
+					requestAtLeastFields="Id,ShipmentAdviceNo,PlannedDepartureBizTimeZone,PlannedDepartureBizUTCTimestamp,PlannedArrivalBizUTCTimestamp,Status,TruckLicensePlate,VesselName,FlightNo,SupplierReferenceNumber"
+					ignoreFromPersonalisation="Id,ShipmentType_Code,TransportationMode_Code,Customer_Id,Carrier_Id,PlannedDepartureBizTimestamp,PlannedArrivalBizUTCTimestamp, PlannedDepartureBizUTCTimestamp,PlannedDepartureBizTimeZone,PlannedArrivalBizTimestamp,PlannedArrivalBizTimeZone,PlannedDepartureLocation_Id,PlannedArrivalLocation_Id"
+					persistencyKey="lbn.shipmentAdvice.shipmentListss.table"
+					useTablePersonalisation="true"
+					smartFilterId="shipmentAdviceListFilterBar"
+					smartVariant="pageSmartVariant"
+					tableType="ResponsiveTable"
+					custom:p13nDialogSettings="{filter:{visible:false}}"
+					useVariantManagement="true"
+					useExportToExcel="false"
+					header="{i18n>shipmentLists.table.title}"
+					showRowCount="true"
+					enableAutoBinding="true"
+					demandPopin="true"
+					beforeRebindTable=".onBeforeRebindTable">
+				<smarttable:customToolbar>
+					<OverflowToolbar id="overflowToolBar">
+						<ToolbarSpacer id="toolbarSpacer" />
+						<Button
+								id="addBtn"
+								text="{i18n>addBtn}"
+								type="Transparent"
+								press=".onAddBtnPressed" />
+						<Button
+								id="editBtn"
+								text="{i18n>editBtn}"
+								enabled="false"
+								type="Transparent"
+								press=".onEditBtnPressed" />
+						<Button
+								id="copyBtn"
+								text="{i18n>copyBtn}"
+								enabled="false"
+								type="Transparent"
+								visible="false"
+								press=".onCopyBtnPressed" />
+					</OverflowToolbar>
+				</smarttable:customToolbar>
+				<Table
+						id="table"
+						mode="MultiSelect"
+						selectionChange=".onSelectionChange"
+						inset="false"
+						growing="true"
+						growingThreshold="20"
+						fixedLayout="false"
+						sticky="HeaderToolbar,ColumnHeaders"
+						class="csaShipmentsTable">
+					<columns>
+						<Column
+								id="colCustomerName"
+								width="15%"
+								hAlign="Begin"
+								vAlign="Top">
+							<Text
+									id="CustomerNameText"
+									text="{i18n>shipmentLists.cusShipmentNo}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'Customer/BpName',
+										leadingProperty: 'Customer/BpName',
+										sortProperty:'Customer/BpName',
+										columnIndex: 1
+									}" />
+							</customData>
+						</Column>
+						<Column
+								id="colcustomerPoItems"
+								hAlign="Begin"
+								vAlign="Top">
+							<Text
+									id="CustomerPoItemsText"
+									text="{i18n>shipmentLists.customerPoItems}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'CustomerPOItems',
+										leadingProperty: 'CustomerPOItems',
+										columnIndex: 2
+									}" />
+							</customData>
+						</Column>
+						<Column
+								id="colTransportMode"
+								hAlign="Begin"
+								vAlign="Top">
+							<Text
+									id="TransportModeText"
+									text="{i18n>shipmentLists.transportMode}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'TransportationMode',
+										leadingProperty: 'TransportationMode',
+										columnIndex: 3
+									}" />
+							</customData>
+						</Column>
+						<Column
+								id="colCarrier"
+								hAlign="Begin"
+								vAlign="Top">
+							<Text
+									id="TcarrierText"
+									text="{i18n>shipmentLists.carrier}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'Carrier',
+										leadingProperty: 'Carrier',
+										columnIndex: 4
+									}" />
+							</customData>
+						</Column>
+						<Column
+								id="colPlannedDepart"
+								hAlign="Begin"
+								vAlign="Top">
+							<Text
+									id="PlannedDepartText"
+									text="{i18n>shipmentLists.plannedDepart}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'PlannedDepartureLocation',
+										leadingProperty: 'PlannedDepartureLocation',
+										columnIndex: 5
+									}" />
+							</customData>
+						</Column>
+						<Column
+								id="colPlannedArrival"
+								hAlign="Begin"
+								vAlign="Top">
+							<Text
+									id="PlannedArrivalText"
+									text="{i18n>shipmentLists.plannedArrival}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'PlannedArrivalLocation',
+										leadingProperty: 'PlannedArrivalLocation',
+										columnIndex: 6
+									}" />
+							</customData>
+						</Column>
+						<Column
+								id="colStatus"
+								hAlign="Begin"
+								vAlign="Top"
+								styleClass="statusCell">
+							<Text
+									id="statusText"
+									text="{i18n>shipmentLists.status}" />
+							<customData>
+								<core:CustomData
+										key="p13nData"
+										value="{
+										columnKey: 'Status',
+										leadingProperty: 'Status',
+										sortProperty: 'Status',
+										columnIndex: 7
+									}" />
+							</customData>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem
+								type="Navigation"
+								press="onNavToDetailPressed">
+							<cells>
+								<ObjectIdentifier
+										id='customerObject'
+										title="{parts:[{path:'Customer/LbnId'},{path:'Customer/BpName'},{path:'ShipmentAdviceNo'}], formatter:'.formatter.convertCusShpAdcNo'}"
+										text="{path:'ShipmentAdviceNo'}"
+										titleActive="true"
+										core:require="{Handler:'demo/easy/carrier/utils/ShareHandler'}"
+										titlePress="Handler.onLinkClicked($event,$controller)"
+										class="csaObjectIdentifier" />
+								<ObjectAttribute
+										id='customerPoItems'
+										text="{path:'CustomerPOItems', formatter:'.formatter.convertCustomerPoItems'}"
+										active="{path: 'CustomerPOItems', formatter: '.formatter.isClickable'}"
+										core:require="{Handler:'demo/easy/carrier/utils/ShareHandler'}"
+										press="Handler.onCustomerPoItemsClicked($event,$controller)" />
+								<ObjectStatus
+										id='tranportModeObject'
+										textDirection="LTR"
+										icon="{path:'TransportationMode/Code', formatter:'.formatter.convertTransportMode'}"
+										text="{TransportationMode/Name}"
+										state="None" />
+								<ObjectAttribute
+										id='carrierObject'
+										text="{parts:[{path:'Carrier/LbnId'},{path:'Carrier/BpName'}], formatter:'.formatter.convertPartyInfo'}"
+										active="true"
+										core:require="{Handler:'demo/easy/carrier/utils/ShareHandler'}"
+										press="Handler.onLinkClicked($event,$controller)" />
+								<ObjectIdentifier
+										id='planDepLocationTime'
+										title="{PlannedDepartureLocation/LocationName}"
+										text="{path:'PlannedDepartureBizUTCTimestamp',type: 'sap.ui.model.odata.type.DateTimeOffset'}"
+										titleActive="true"
+										core:require="{Handler:'demo/easy/carrier/utils/ShareHandler'}"
+										titlePress="Handler.onLinkClicked($event, $controller)"
+										class="csaObjectIdentifier" />
+								<ObjectIdentifier
+										id='planArrivalLocationTime'
+										title="{PlannedArrivalLocation/LocationName}"
+										text="{path:'PlannedArrivalBizUTCTimestamp',type: 'sap.ui.model.odata.type.DateTimeOffset'}"
+										titleActive="true"
+										core:require="{Handler:'demo/easy/carrier/utils/ShareHandler'}"
+										titlePress="Handler.onLinkClicked($event, $controller)"
+										class="csaObjectIdentifier" />
+								<ObjectStatus
+										id="statusObject"
+										icon="{path:'Status',formatter:'.formatter.keyToIcon'}"
+										text="{path:'Status',formatter:'.formatter.keyToText'}"
+										state="{path:'Status',formatter:'.formatter.keyToState'}" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</smarttable:SmartTable>
+		</f:content>
+	</f:DynamicPage>
 </mvc:View>

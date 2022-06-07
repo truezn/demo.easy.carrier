@@ -1,1 +1,18 @@
-/* Enter your custom styles here */
+.csaLocationFont {
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+.csaShipmentsTable .csaObjectIdentifier .sapMObjectIdentifierTitle .sapMText,
+.csaShipmentsTable .csaObjectIdentifier .sapMObjectIdentifierTitle .sapMLnk {
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+.sapUiSizeCompact .sapMListTblCell > .sapMLnk,
+.sapUiSizeCompact .sapMListTblCell > .sapMText,
+.sapUiSizeCompact .sapMListTblCell > .sapMLabel,
+.sapUiSizeCompact .sapMListTblCell > .sapMObjectNumber,
+.sapUiSizeCompact .sapMListTblCell > .sapMObjectIdentifier,
+.sapUiSizeCompact .sapMListTblCell > .sapMObjStatus {
+  vertical-align: middle;
+  line-height: 1.1;
+}

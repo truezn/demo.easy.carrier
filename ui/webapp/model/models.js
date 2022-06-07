@@ -17,6 +17,11 @@ sap.ui.define(
         oModel.setDefaultBindingMode('OneWay');
         return oModel;
       },
+      createGlobalModel: function () {
+        var oGlobalModel = new JSONModel();
+        oGlobalModel.setProperty('/transportMode', []);
+        return oGlobalModel;
+      },
     };
   }
 );

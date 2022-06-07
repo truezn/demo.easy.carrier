@@ -1,0 +1,206 @@
+{
+  "d": {
+    "results": [
+      {
+        "createdAt": null,
+        "createdBy": null,
+        "modifiedAt": null,
+        "modifiedBy": null,
+        "Id": "1cb99949-8cb9-413b-ad73-5e70e148937d",
+        "ShipmentAdviceNo": "CAS60003136180000001",
+        "ShipmentType_Code": "2",
+        "Status": 2,
+        "ContainerNo": "CA10000",
+        "TransportationMode_Code": "03",
+        "SupplierReferenceNumber": "800000188",
+        "VesselName": null,
+        "TruckLicensePlate": "L2000010",
+        "TruckID": "TruckId1000",
+        "MobilePhone": "1222938847",
+        "FlightNo": null,
+        "PlannedDepartureBizUTCTimestamp": "/Date(4073644799000)/",
+        "PlannedDepartureBizTimestamp": "/Date(4073644799000)/",
+        "PlannedDepartureBizTimeZone": "Etc/GMT+12",
+        "PlannedArrivalBizUTCTimestamp": "/Date(4073644799000)/",
+        "PlannedArrivalBizTimestamp": "/Date(4073644799000)/",
+        "PlannedArrivalBizTimeZone": "Etc/GMT+12",
+        "Customer_Id": "1cb99949-8cb9-413b-ad73-5e70e148937e",
+        "Carrier_Id": "1cb99949-8cb9-413b-ad73-5e70e1489399",
+        "PlannedDepartureLocation_Id": "03b5db48-d525-3e29-ba12-bf6245621bdf",
+        "PlannedArrivalLocation_Id": "13b5db48-d525-3e29-ba12-bf6245621bdf",
+        "ShipmentType": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')/ShipmentType"
+          }
+        },
+        "TransportationMode": {
+          "Code": "03",
+          "Name": "Road transport"
+        },
+        "PlannedDepartureLocation": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')/PlannedDepartureLocation"
+          }
+        },
+        "PlannedArrivalLocation": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')/PlannedArrivalLocation"
+          }
+        },
+        "Customer": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')/Customer"
+          }
+        },
+        "Carrier": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')/Carrier"
+          }
+        },
+        "CustomerPOItems": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')/CustomerPOItems"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.ShipmentAdvice",
+          "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ad73-5e70e148937d')"
+        }
+      },
+      {
+        "createdAt": null,
+        "createdBy": null,
+        "modifiedAt": null,
+        "modifiedBy": null,
+        "Id": "1cb99949-8cb9-413b-ac73-5e70e148937d",
+        "ShipmentAdviceNo": "CAS60003136180000020",
+        "ShipmentType_Code": "2",
+        "Status": 2,
+        "TransportationMode_Code": "01",
+        "ContainerNo": "CA30000",
+        "SupplierReferenceNumber": "800000189",
+        "VesselName": "Vessel3201",
+        "TruckID": null,
+        "MobilePhone": null,
+        "TruckLicensePlate": null,
+        "FlightNo": null,
+        "PlannedDepartureBizUTCTimestamp": "/Date(4073644799000)/",
+        "PlannedDepartureBizTimestamp": "/Date(4073644799000)/",
+        "PlannedDepartureBizTimeZone": "Asia/Jakarta",
+        "PlannedDepartureLocation_Id": "43b5db48-d525-3e29-ba12-bf6245621bdf",
+        "PlannedArrivalBizUTCTimestamp": "/Date(4073644799000)/",
+        "PlannedArrivalBizTimestamp": "/Date(4073644799000)/",
+        "PlannedArrivalBizTimeZone": "Asia/Jakarta",
+        "PlannedArrivalLocation_Id": "13b5db48-d525-3e29-ba12-bf6245621bdf",
+        "Customer_Id": "2cb99949-8cb9-413b-ad73-5e70e148937e",
+        "Carrier_Id": "1cb99949-8cb9-413b-ad73-5e70e148937f",
+        "ShipmentType": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')/ShipmentType"
+          }
+        },
+        "TransportationMode": {
+          "Code": "01",
+          "Name": "Maritime transport"
+        },
+        "PlannedDepartureLocation": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')/PlannedDepartureLocation"
+          }
+        },
+        "PlannedArrivalLocation": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')/PlannedArrivalLocation"
+          }
+        },
+        "Customer": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')/Customer"
+          }
+        },
+        "Carrier": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')/Carrier"
+          }
+        },
+        "CustomerPOItems": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')/CustomerPOItems"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.ShipmentAdvice",
+          "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb99949-8cb9-413b-ac73-5e70e148937d')"
+        }
+      },
+      {
+        "createdAt": null,
+        "createdBy": null,
+        "modifiedAt": null,
+        "modifiedBy": null,
+        "Id": "1cb89949-8cb9-413b-ad73-5e70e148937d",
+        "ShipmentAdviceNo": "CAS60003136180000002",
+        "ShipmentType_Code": null,
+        "Status": 3,
+        "TransportationMode_Code": "04",
+        "ContainerNo": "CA20000",
+        "SupplierReferenceNumber": "800000189",
+        "VesselName": null,
+        "TruckID": null,
+        "MobilePhone": null,
+        "TruckLicensePlate": null,
+        "FlightNo": "CA8971",
+        "PlannedDepartureBizUTCTimestamp": "/Date(5073644799000)/",
+        "PlannedDepartureBizTimestamp": "/Date(5073644799000)/",
+        "PlannedDepartureBizTimeZone": "Etc/GMT+12",
+        "PlannedArrivalBizUTCTimestamp": "/Date(5073644799000)/",
+        "PlannedArrivalBizTimestamp": "/Date(5073644799000)/",
+        "PlannedArrivalBizTimeZone": "Etc/GMT+12",
+        "Customer_Id": "1cb99949-7cb9-413b-ad73-5e70e147937e",
+        "Carrier_Id": "1cb99949-8cb9-412b-ad73-5e70e148937f",
+        "PlannedDepartureLocation_Id": "23b5db48-d525-3e29-ba12-bf6245621bdf",
+        "PlannedArrivalLocation_Id": "13b5db48-d525-3e29-ba12-bf6245621bdf",
+        "ShipmentType": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')/ShipmentType"
+          }
+        },
+        "TransportationMode": {
+          "Code": "04",
+          "Name": "Air transport"
+        },
+
+        "PlannedDepartureLocation": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')/PlannedDepartureLocation"
+          }
+        },
+
+        "PlannedArrivalLocation": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')/PlannedArrivalLocation"
+          }
+        },
+        "Customer": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')/Customer"
+          }
+        },
+        "Carrier": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')/Carrier"
+          }
+        },
+        "CustomerPOItems": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')/CustomerPOItems"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.ShipmentAdvice",
+          "uri": "http://localhost:4004/v2/shipment-advice/ShipmentAdvice(guid'1cb89949-8cb9-413b-ad73-5e70e148937d')"
+        }
+      }
+    ]
+  }
+}

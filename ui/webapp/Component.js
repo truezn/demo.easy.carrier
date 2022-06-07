@@ -22,6 +22,8 @@ sap.ui.define(
 
         // set the device model
         this.setModel(models.createDeviceModel(), 'device');
+        // set the global model
+        this.setModel(models.createGlobalModel(), 'global');
       },
     });
   }

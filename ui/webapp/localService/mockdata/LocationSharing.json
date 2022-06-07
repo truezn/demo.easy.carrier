@@ -1,0 +1,26 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://localhost:4004/v2/shipment-advice/odata/v1/LocationSharing(guid'bfbf678b-8b17-4924-b9d1-dd3c13d1a108')",
+          "uri": "http://localhost:4004/v2/shipment-advice/odata/v1/LocationSharing(guid'bfbf678b-8b17-4924-b9d1-dd3c13d1a108')",
+          "type": "ShipmentAdviceService.LocationSharing"
+        },
+        "Id": "bfbf678b-8b17-4924-b9d1-dd3c13d1a108",
+        "LocationAltkey": "xri://sap.com/id:LBN#10000014:QM7_910:Location:LogisticLocation:SH",
+        "CoownerLbnId": "10010001084"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:4004/v2/shipment-advice/odata/v1/LocationSharing(guid'afbf678b-8b17-4924-b9d1-dd3c13d1a108')",
+          "uri": "http://localhost:4004/v2/shipment-advice/odata/v1/LocationSharing(guid'afbf678b-8b17-4924-b9d1-dd3c13d1a108')",
+          "type": "ShipmentAdviceService.LocationSharing"
+        },
+        "Id": "afbf678b-8b17-4924-b9d1-dd3c13d1a108",
+        "LocationAltkey": "xri://sap.com/id:LBN#10000014:QM7_910:Location:LogisticLocation:NY",
+        "CoownerLbnId": "10010001084"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "d": {
+    "__metadata": {
+      "id": "http://localhost:4004/v2/shipment-advice/ContactDetail(guid'816f2d9f-4b56-4906-8428-799286b54763')",
+      "uri": "http://localhost:4004/v2/shipment-advice/ContactDetail(guid'816f2d9f-4b56-4906-8428-799286b54763')",
+      "type": "ShipmentAdviceService.ContactDetail"
+    },
+    "Id": "1cb89949-8cb9-413b-ad73-5e70e1489376",
+    "ContactName": "Fed USA",
+    "ContactEmail": "fed.usa@sap.com",
+    "ContactPhone": "111-11111450"
+  }
+}

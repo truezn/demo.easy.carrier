@@ -1,0 +1,134 @@
+{
+  "d": {
+    "results": [
+      {
+        "Id": "3cb99949-8cb9-413b-ad73-5e70e148937d",
+        "BuyerLbnId": "10010001084",
+        "PurchaseOrderNo": "PONO0001",
+        "ItemNo": "01",
+        "MaterialNumber": "MAT001",
+        "MaterialDescription": "MaterialDesp001",
+        "PlannedDeliveryDate": "/Date(4073644799000)/",
+        "InitialPlannedDeliveryDate": "/Date(4073644798000)/",
+        "ConfirmedQuantity": "1000",
+        "Incoterms_Code": "1000",
+        "IncotermsLocation": "Shanghai",
+        "ReferenceId": "R10000",
+        "ReceivingPlantAddress": "Chenhui 1001#,PuDong,Shanghai",
+        "ConfirmedQuantityUoM": "Box",
+        "Altkey": "AltkeyPONO0001",
+        "ShipmentAdviceRef_Id": "1cb99949-8cb9-413b-ad73-5e70e148937d",
+        "toIncoterms": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e148937d')/Incoterms"
+          }
+        },
+        "toShipmentAdviceRef": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e148937d')/toShipmentAdviceRef"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Item",
+          "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e148937d')"
+        }
+      },
+      {
+        "Id": "3cb99949-8cb9-413b-ad73-5e70e148937f",
+        "BuyerLbnId": "10010001084",
+        "PurchaseOrderNo": "PONO0002",
+        "ItemNo": "01",
+        "MaterialNumber": "MAT002",
+        "MaterialDescription": "MaterialDesp002",
+        "PlannedDeliveryDate": "/Date(4073644799000)/",
+        "InitialPlannedDeliveryDate": "/Date(4073644798000)/",
+        "ConfirmedQuantity": "1000",
+        "Incoterms_Code": "2000",
+        "IncotermsLocation": "USA",
+        "ReceivingPlantAddress": "Avenue 1001#,WD,America",
+        "ReferenceId": "R20000",
+        "ConfirmedQuantityUoM": "Box",
+        "Altkey": "AltkeyPONO0002",
+        "ShipmentAdviceRef_Id": "1cb99949-8cb9-413b-ad73-5e70e148937d",
+        "toIncoterms": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e148937f')/Incoterms"
+          }
+        },
+        "toShipmentAdviceRef": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e148937f')/toShipmentAdviceRef"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Item",
+          "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e148937f')"
+        }
+      },
+      {
+        "Id": "3cb99949-8cb9-413b-ad73-5e70e248937f",
+        "BuyerLbnId": "10010001087",
+        "PurchaseOrderNo": "PONO0003",
+        "ItemNo": "03",
+        "MaterialNumber": "MAT003",
+        "MaterialDescription": "MaterialDesp003",
+        "PlannedDeliveryDate": "/Date(4073644799000)/",
+        "InitialPlannedDeliveryDate": "/Date(4073644797000)/",
+        "ConfirmedQuantity": "1000",
+        "Incoterms_Code": "3000",
+        "IncotermsLocation": "Shanghai",
+        "ReferenceId": "R30000",
+        "ReceivingPlantAddress": "Chenhui 1001#,PuDong,Shanghai",
+        "ConfirmedQuantityUoM": "Box",
+        "Altkey": "AltkeyPONO0003",
+        "ShipmentAdviceRef_Id": "1cb89949-8cb9-413b-ad73-5e70e148937d",
+        "toIncoterms": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e248937f')/Incoterms"
+          }
+        },
+        "toShipmentAdviceRef": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e248937f')/toShipmentAdviceRef"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Item",
+          "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb99949-8cb9-413b-ad73-5e70e248937f')"
+        }
+      },
+      {
+        "Id": "3cb98849-8cb9-413b-ad73-5e70e148937d",
+        "BuyerLbnId": "10010001084",
+        "PurchaseOrderNo": "PONO0004",
+        "ItemNo": "04",
+        "MaterialNumber": "MAT004",
+        "MaterialDescription": "MaterialDesp004",
+        "PlannedDeliveryDate": "/Date(4073644799000)/",
+        "InitialPlannedDeliveryDate": "/Date(4073644798000)/",
+        "ConfirmedQuantity": "1000",
+        "Incoterms_Code": "1000",
+        "IncotermsLocation": "Shanghai",
+        "ReferenceId": "R10000",
+        "Altkey": "AltkeyPONO0004",
+        "ReceivingPlantAddress": "Chenhui 1001#,PuDong,Shanghai",
+        "ConfirmedQuantityUoM": "Box",
+        "ShipmentAdviceRef_Id": "1cb99949-8cb9-413b-ad73-5e70e148937d",
+        "toIncoterms": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb98849-8cb9-413b-ad73-5e70e148937d')/Incoterms"
+          }
+        },
+        "toShipmentAdviceRef": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb98849-8cb9-413b-ad73-5e70e148937d')/toShipmentAdviceRef"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Item",
+          "uri": "http://localhost:4004/v2/shipment-advice/Item(guid'3cb98849-8cb9-413b-ad73-5e70e148937d')"
+        }
+      }
+    ]
+  }
+}

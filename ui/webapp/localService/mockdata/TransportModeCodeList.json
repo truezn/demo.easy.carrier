@@ -1,0 +1,33 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/TransportModeCodeList('01')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/TransportModeCodeList('01')",
+          "type": "ShipmentAdviceService.TransportModeCodeList"
+        },
+        "Code": "01",
+        "Name": "Maritime transport"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/TransportModeCodeList('03')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/TransportModeCodeList('03')",
+          "type": "ShipmentAdviceService.TransportModeCodeList"
+        },
+        "Code": "03",
+        "Name": "Road transport"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/TransportModeCodeList('04')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/TransportModeCodeList('04')",
+          "type": "ShipmentAdviceService.TransportModeCodeList"
+        },
+        "Code": "04",
+        "Name": "Air transport"
+      }
+    ]
+  }
+}

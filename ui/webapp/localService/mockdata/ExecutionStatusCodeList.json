@@ -1,0 +1,33 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ExecutionStatusCodeList('2')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ExecutionStatusCodeList('2')",
+          "type": "ShipmentAdviceService.ExecutionStatusCodeList"
+        },
+        "Code": "2",
+        "Name": "Not Started"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ExecutionStatusCodeList('3')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ExecutionStatusCodeList('3')",
+          "type": "ShipmentAdviceService.ExecutionStatusCodeList"
+        },
+        "Code": "3",
+        "Name": "In Transit"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ExecutionStatusCodeList('4')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ExecutionStatusCodeList('4')",
+          "type": "ShipmentAdviceService.ExecutionStatusCodeList"
+        },
+        "Code": "4",
+        "Name": "Completed"
+      }
+    ]
+  }
+}

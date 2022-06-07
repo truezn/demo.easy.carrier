@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx
+		Version="1.0"
+		xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+		xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+		xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:Reference
+			Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2"
+			xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+		<edmx:Include
+				Alias="Common"
+				Namespace="com.sap.vocabularies.Common.v1" />
+	</edmx:Reference>
+	<edmx:Reference
+			Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml"
+			xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+		<edmx:Include
+				Alias="Capabilities"
+				Namespace="Org.OData.Capabilities.V1" />
+	</edmx:Reference>
+	<edmx:Reference
+			Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2"
+			xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+		<edmx:Include
+				Alias="UI"
+				Namespace="com.sap.vocabularies.UI.v1" />
+	</edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="1.0">
+		<Schema
+				Namespace="ShipmentAdviceService"
+				xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<Annotations
+					Target="ShipmentAdviceService.EntityContainer/ShipmentAdvice"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Capabilities.FilterRestrictions">
+					<Record>
+						<PropertyValue Property="NonFilterableProperties">
+							<Collection>
+								<PropertyPath>Id</PropertyPath>
+								<PropertyPath>ShipmentType_Code</PropertyPath>
+								<PropertyPath>TransportationMode_Code</PropertyPath>
+								<PropertyPath>PlannedDepartureLocation_Id</PropertyPath>
+								<PropertyPath>Customer_Id</PropertyPath>
+								<PropertyPath>Carrier_Id</PropertyPath>
+								<PropertyPath>PlannedArrivalLocation_Id</PropertyPath>
+								<PropertyPath>ShipmentType</PropertyPath>
+								<PropertyPath>TransportationMode</PropertyPath>
+								<PropertyPath>PlannedDepartureBizTimeZone</PropertyPath>
+								<PropertyPath>PlannedDepartureBizUTCTimestamp</PropertyPath>
+								<PropertyPath>PlannedArrivalBizUTCTimestamp</PropertyPath>
+								<PropertyPath>PlannedArrivalBizTimeZone</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.EntityContainer/Party"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Capabilities.FilterRestrictions">
+					<Record>
+						<PropertyValue Property="NonFilterableProperties">
+							<Collection>
+								<PropertyPath>Id</PropertyPath>
+								<PropertyPath>LbnId</PropertyPath>
+								<PropertyPath>BpType</PropertyPath>
+								<PropertyPath>ContactPerson_Id</PropertyPath>
+								<PropertyPath>TenantId</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.EntityContainer/LocationMaster"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation Term="Capabilities.FilterRestrictions">
+					<Record>
+						<PropertyValue Property="NonFilterableProperties">
+							<Collection>
+								<PropertyPath>Id</PropertyPath>
+								<PropertyPath>LocationName</PropertyPath>
+								<PropertyPath>LocationAltkey</PropertyPath>
+								<PropertyPath>LocationDetail_Id</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="UI.FieldGroup"
+						Qualifier="AddFilt">
+					<Record>
+						<PropertyValue
+								Property="Label"
+								String="{@i18n>shipmentLists.shipmentAdviceFilter}" />
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="VesselName" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.vesselName}" />
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="TruckLicensePlate" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.truckLicensePlate}" />
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="FlightNo" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.flightNo}" />
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="ContainerNo" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.containerNo}" />
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="TruckID" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.truckID}" />
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="MobilePhone" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.mobilePhone}" />
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue
+											Property="Value"
+											Path="SupplierReferenceNumber" />
+									<PropertyValue
+											Property="Label"
+											String="{@i18n>shipmentLists.supplierReferenceNumber}" />
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/createdAt"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.createdAt}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/createdBy"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.createdBy}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/modifiedAt"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.modifiedAt}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/modifiedBy"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.modifiedBy}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/VesselName"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.vesselName}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/TruckLicensePlate"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.truckLicensePlate}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/FlightNo"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.flightNo}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/TruckID"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.truckID}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/MobilePhone"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.mobilePhone}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/PlannedDepartureBizTimeZone"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.plannedDepartureBizTimeZone}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/PlannedArrivalBizTimeZone"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.plannedArrivalBizTimeZone}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/SupplierReferenceNumber"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.supplierReferenceNumber}" />
+			</Annotations>
+			<Annotations
+					Target="ShipmentAdviceService.ShipmentAdvice/ContainerNo"
+					xmlns="http://docs.oasis-open.org/odata/ns/edm">
+				<Annotation
+						Term="Common.Label"
+						String="{i18n>shipmentLists.containerNo}" />
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

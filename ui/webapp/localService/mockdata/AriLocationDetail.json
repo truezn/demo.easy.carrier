@@ -1,0 +1,14 @@
+{
+  "d": {
+    "__metadata": {
+      "id": "http://localhost:4004/v2/shipment-advice/LocationDetail(guid'02b5db48-d525-3e29-ba12-bf6245621bdf')",
+      "uri": "http://localhost:4004/v2/shipment-advice/LocationDetail(guid'02b5db48-d525-3e29-ba12-bf6245621bdf')",
+      "type": "ShipmentAdviceService.LocationDetail"
+    },
+    "Id": "02b5db48-d525-3e29-ba12-bf6245621bdf",
+    "ObjectTypeDescription": "BeijingObjType",
+    "SourceSystem": "ER9",
+    "ExternalId": "Externnal-Beijing",
+    "Address": "Address Beijing"
+  }
+}

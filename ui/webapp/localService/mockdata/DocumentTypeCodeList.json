@@ -1,0 +1,1140 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('001')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('001')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "001",
+        "Name": "Purchase Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('003')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('003')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "003",
+        "Name": "Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('004')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('004')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "004",
+        "Name": "Invoice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('005')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('005')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "005",
+        "Name": "Credit Memo"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('107')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('107')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "107",
+        "Name": "Purchase Order Confirmation"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('108')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('108')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "108",
+        "Name": "Purchase Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('109')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('109')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "109",
+        "Name": "Purchase Requisition"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('111')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('111')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "111",
+        "Name": "Request for Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1122')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1122')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1122",
+        "Name": "Transportation Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1123')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1123')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1123",
+        "Name": "Transportation Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('114')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('114')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "114",
+        "Name": "Sales Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('117')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('117')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "117",
+        "Name": "Service Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('127')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('127')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "127",
+        "Name": "Supplier Invoice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('128')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('128')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "128",
+        "Name": "Supplier Invoice Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('129')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('129')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "129",
+        "Name": "Supplier Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('130')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('130')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "130",
+        "Name": "Supply Planning Exception"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('131')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('131')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "131",
+        "Name": "Supply Planning Requirement"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('28')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('28')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "28",
+        "Name": "Customer Invoice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('29')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('29')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "29",
+        "Name": "Customer Invoice Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('30')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('30')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "30",
+        "Name": "Customer Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('487')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('487')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "487",
+        "Name": "Dock Appointment"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('496')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('496')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "496",
+        "Name": "Outbound Delivery Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('58')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('58')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "58",
+        "Name": "Inbound Delivery"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('59')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('59')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "59",
+        "Name": "Inbound Delivery Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('609')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('609')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "609",
+        "Name": "Transportation Booking Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('610')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('610')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "610",
+        "Name": "Transportation Booking Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('611')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('611')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "611",
+        "Name": "Shipment Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('612')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('612')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "612",
+        "Name": "Shipment Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('613')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('613')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "613",
+        "Name": "Freight Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('614')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('614')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "614",
+        "Name": "Freight Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('618')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('618')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "618",
+        "Name": "Freight Unit"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('619')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('619')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "619",
+        "Name": "House Shipment"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('620')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('620')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "620",
+        "Name": "Master Shipment"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('621')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('621')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "621",
+        "Name": "Request for Supplier Shipment Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('622')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('622')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "622",
+        "Name": "Request for Supplier Freight Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('625')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('625')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "625",
+        "Name": "Supplier Shipment Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('626')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('626')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "626",
+        "Name": "Supplier Freight Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('629')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('629')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "629",
+        "Name": "Freight Settlement Document"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('630')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('630')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "630",
+        "Name": "Forwarding Settlement Document"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('73')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('73')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "73",
+        "Name": "Outbound Delivery"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('74')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('74')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "74",
+        "Name": "Outbound Delivery Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('80')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('80')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "80",
+        "Name": "Payment Advice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('825')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('825')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "825",
+        "Name": "Dispute Case"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('AEL')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('AEL')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "AEL",
+        "Name": "Delivery Number (Transport)"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('ATY')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('ATY')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "ATY",
+        "Name": "Container Release Order Reference"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('BN')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('BN')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "BN",
+        "Name": "Consignment identifier, carrier assigned"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CMR')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CMR')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "CMR",
+        "Name": "Road consignment note number"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('I001')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('I001')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "I001",
+        "Name": "ERP Shipment"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('I02')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('I02')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "I02",
+        "Name": "Customer Shipment Quote"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('I03')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('I03')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "I03",
+        "Name": "EWM Freight Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('RPO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('RPO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "RPO",
+        "Name": "Returns Purchase Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('RSTO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('RSTO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "RSTO",
+        "Name": "Returns Stock Transport Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('SSL45')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('SSL45')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "SSL45",
+        "Name": "Customs Invoice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('STO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('STO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "STO",
+        "Name": "Stock Transport Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('STPSA')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('STPSA')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "STPSA",
+        "Name": "Stock Transport Purch. Scheduling Aggr."
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T50')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T50')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T50",
+        "Name": "Bill of Lading"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T51')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T51')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T51",
+        "Name": "House Bill of Lading"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T52')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T52')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T52",
+        "Name": "Master Bill of Lading"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T53')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T53')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T53",
+        "Name": "Air Waybill"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T54')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T54')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T54",
+        "Name": "House Air Waybill"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T55')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T55')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T55",
+        "Name": "Master Air Waybill"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T56')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T56')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T56",
+        "Name": "Reference number of Ordering Party"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T57')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T57')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T57",
+        "Name": "Reference number of Shipper"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T58')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T58')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T58",
+        "Name": "Reference number of Consignee"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T59')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T59')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T59",
+        "Name": "Cancelled MM Invoice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T60')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T60')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T60",
+        "Name": "Subsequent Credit Memo"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T61')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T61')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T61",
+        "Name": "Subsequent Debit Memo"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T62')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T62')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T62",
+        "Name": "Cancelled Credit Memo"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T63')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T63')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T63",
+        "Name": "Reference to Export Document"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T64')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T64')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T64",
+        "Name": "Cancelled Billing Document"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T65')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T65')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T65",
+        "Name": "Cancelled Subsequent Credit"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T66')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T66')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T66",
+        "Name": "Cancelled Subsequent Debit"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T67')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T67')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T67",
+        "Name": "Reference number of Carrier"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T70')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T70')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T70",
+        "Name": "License"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T71')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T71')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T71",
+        "Name": "Declaration"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T72')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T72')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T72",
+        "Name": "Certificate"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T73')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T73')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T73",
+        "Name": "Packing List"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1311')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1311')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1311",
+        "Name": "Transportation Unit Appointment"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1570')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1570')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1570",
+        "Name": "Standard Outbound Warehouse Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1571')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1571')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1571",
+        "Name": "Intracompany Outbound Warehouse Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1575')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1575')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1575",
+        "Name": "Intracompany Inbound Site Logistics Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1577')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('1577')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "1577",
+        "Name": "Supplier Inbound Site Logistics Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('VPID')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('VPID')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "VPID",
+        "Name": "Visibility Provider Order ID"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('YR')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('YR')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "YR",
+        "Name": "Yard Request"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('YO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('YO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "YO",
+        "Name": "Yard Order"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CUSTR')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CUSTR')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "CUSTR",
+        "Name": "Customer Reference"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L001')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L001')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L001",
+        "Name": "Vessel Name"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L002')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L002')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L002",
+        "Name": "Shipping Line"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L003')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L003')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L003",
+        "Name": "Port of Discharge"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L004')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L004')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L004",
+        "Name": "Port of Loading"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L005')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L005')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L005",
+        "Name": "Voyage No"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L006')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L006')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L006",
+        "Name": "Trailer Number"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T69')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('T69')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "T69",
+        "Name": "Booking ID"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('Vessel_ID')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('Vessel_ID')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "Vessel_ID",
+        "Name": "Vessel ID"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "CO",
+        "Name": "Certificate of Origin"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('POD')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('POD')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "POD",
+        "Name": "Proof of Delivery"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('POO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('POO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "POO",
+        "Name": "Proof of Origin"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('BREF')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('BREF')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "BREF",
+        "Name": "Ocean booking reference number of carrier"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L007')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L007')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L007",
+        "Name": "Loading list"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L008')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L008')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L008",
+        "Name": "Packing list"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L009')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L009')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L009",
+        "Name": "Transport slip"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L010')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L010')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L010",
+        "Name": "Delivery note"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L011')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L011')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L011",
+        "Name": "IMO statement"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L012')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L012')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L012",
+        "Name": "Counting list"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L013')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L013')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L013",
+        "Name": "Weighing receipt"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L014')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L014')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L014",
+        "Name": "Certificate of Analysis"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L015')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L015')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L015",
+        "Name": "Electronic administrative document"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L016')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L016')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L016",
+        "Name": "Loading List(unsigned)"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L017')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L017')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L017",
+        "Name": "Loading List (signed )"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L018')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L018')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L018",
+        "Name": "IMO Dangerous Goods Declaration"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L019')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L019')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L019",
+        "Name": "IATA Dangerous Goods Regulation"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L020')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L020')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L020",
+        "Name": "Waybill"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L021')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L021')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L021",
+        "Name": "Packing List"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L022')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L022')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L022",
+        "Name": "Movement Certificate(Turkey)"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L023')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L023')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L023",
+        "Name": "Self-Pickup Notification"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L024')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L024')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L024",
+        "Name": "Delivery Note"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L025')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L025')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L025",
+        "Name": "Export Accompanying Document"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L026')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L026')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L026",
+        "Name": "Accompanying document for excisable goods"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L027')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L027')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L027",
+        "Name": "Movement Certificate or Preferential Certificate"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L028')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L028')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L028",
+        "Name": "Railway Bill of Lading"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L029')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L029')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L029",
+        "Name": "Ocean Bill of Lading"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L030')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L030')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L030",
+        "Name": "Commercial Invoice"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L031')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L031')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L031",
+        "Name": "Certificate of Analysis"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L032')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('L032')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "L032",
+        "Name": "Certificate of Origin"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CONT')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('CONT')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "CONT",
+        "Name": "Container Number"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('REG_NO')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/DocumentReferenceTypeCodeList('REG_NO')",
+          "type": "ShipmentAdviceService.DocumentReferenceTypeCodeList"
+        },
+        "Code": "REG_NO",
+        "Name": "Registration Number"
+      }
+    ]
+  }
+}

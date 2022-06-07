@@ -1,0 +1,82 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'03b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "uri": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'03b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "type": "ShipmentAdviceService.LocationMaster"
+        },
+        "Id": "03b5db48-d525-3e29-ba12-bf6245621bdf",
+        "TenantId": "33b5db48-d525-3e29-ba12-bf6245621bdf",
+        "LocationAltkey": "xri://sap.com/id:LBN#10000014:QM7_910:Location:LogisticLocation:SH",
+        "LocationName": "Shanghai",
+        "LocationDetail_Id": "01b5db48-d525-3e29-ba12-bf6245621bdf",
+        "LocationDetail": {
+          "Id": "01b5db48-d525-3e29-ba12-bf6245621bdf",
+          "ObjectTypeDescription": "ObjType",
+          "SourceSystem": "ER3",
+          "ExternalId": "Externnal-Shanghai",
+          "Address": "Address Shanghai"
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'13b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "uri": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'13b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "type": "ShipmentAdviceService.LocationMaster"
+        },
+        "Id": "13b5db48-d525-3e29-ba12-bf6245621bdf",
+        "TenantId": "44b5db48-d525-3e29-ba12-bf6245621bdf",
+        "LocationAltkey": "xri://sap.com/id:LBN#10000014:QM7_910:Location:LogisticLocation:BJ",
+        "LocationName": "Beijing",
+        "LocationDetail_Id": "01c4db48-d525-3e29-ba12-bf6245621bdf",
+        "LocationDetail": {
+          "Id": "01c4db48-d525-3e29-ba12-bf6245621bdf",
+          "ObjectTypeDescription": "ObjType",
+          "SourceSystem": "ER3",
+          "ExternalId": "Externnal-Beijing",
+          "Address": "Address Beijing"
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'23b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "uri": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'23b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "type": "ShipmentAdviceService.LocationMaster"
+        },
+        "Id": "23b5db48-d525-3e29-ba12-bf6245621bdf",
+        "TenantId": "53b5db48-d525-3e29-ba12-bf6245621bdf",
+        "LocationAltkey": "xri://sap.com/id:LBN#10000014:QM7_910:Location:LogisticLocation:NY",
+        "LocationName": "Newyork",
+        "LocationDetail_Id": "01c4df48-d525-3e29-ba12-bf6245621bdf",
+        "LocationDetail": {
+          "Id": "01c4df48-d525-3e29-ba12-bf6245621bdf",
+          "ObjectTypeDescription": "ObjType",
+          "SourceSystem": "ER3",
+          "ExternalId": "Externnal-Newyork",
+          "Address": "Address Newyork"
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'43b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "uri": "http://localhost:4004/v2/shipment-advice/LocationMaster(guid'43b5db48-d525-3e29-ba12-bf6245621bdf')",
+          "type": "ShipmentAdviceService.LocationMaster"
+        },
+        "Id": "43b5db48-d525-3e29-ba12-bf6245621bdf",
+        "TenantId": "63b5db48-d525-3e29-ba12-bf6245621bdf",
+        "LocationAltkey": "xri://sap.com/id:LBN#10000014:QM7_910:Location:LogisticLocation:BLR",
+        "LocationName": "Bangalore",
+        "LocationDetail_Id": "01c5df48-d525-3e29-ba12-bf6245621bdf",
+        "LocationDetail": {
+          "Id": "01c5df48-d525-3e29-ba12-bf6245621bdf",
+          "ObjectTypeDescription": "ObjType",
+          "SourceSystem": "ER3",
+          "ExternalId": "Externnal-Bangalore",
+          "Address": "Address Bangalore"
+        }
+      }
+    ]
+  }
+}

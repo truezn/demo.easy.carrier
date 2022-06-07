@@ -1,0 +1,54 @@
+{
+  "d": {
+    "results": [
+      {
+        "Code": "03",
+        "Name": "Truck",
+        "__metadata": {
+          "type": "ShipmentAdviceService.LbnCodeList",
+          "uri": "http://localhost:4004/v2/shipment-advice/LbnCodeList(03)"
+        }
+      },
+      {
+        "Code": "04",
+        "Name": "Air",
+        "__metadata": {
+          "type": "ShipmentAdviceService.LbnCodeList",
+          "uri": "http://localhost:4004/v2/shipment-advice/LbnCodeList(04)"
+        }
+      },
+      {
+        "Code": "01",
+        "Name": "Ocean",
+        "__metadata": {
+          "type": "ShipmentAdviceService.LbnCodeList",
+          "uri": "http://localhost:4004/v2/shipment-advice/LbnCodeList(01)"
+        }
+      },
+      {
+        "Code": "1000",
+        "Name": "Incoterm1000",
+        "__metadata": {
+          "type": "ShipmentAdviceService.LbnCodeList",
+          "uri": "http://localhost:4004/v2/shipment-advice/LbnCodeList(1000)"
+        }
+      },
+      {
+        "Code": "2000",
+        "Name": "Incoterm2000",
+        "__metadata": {
+          "type": "ShipmentAdviceService.LbnCodeList",
+          "uri": "http://localhost:4004/v2/shipment-advice/LbnCodeList(2000)"
+        }
+      },
+      {
+        "Code": "3000",
+        "Name": "Incoterm3000",
+        "__metadata": {
+          "type": "ShipmentAdviceService.LbnCodeList",
+          "uri": "http://localhost:4004/v2/shipment-advice/LbnCodeList(3000)"
+        }
+      }
+    ]
+  }
+}

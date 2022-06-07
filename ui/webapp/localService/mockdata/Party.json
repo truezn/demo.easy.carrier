@@ -1,0 +1,108 @@
+{
+  "d": {
+    "results": [
+      {
+        "Id": "1cb99949-8cb9-413b-ad73-5e70e148937e",
+        "TenantId": "3cb99949-8cb9-413b-ad73-5e70e148937e",
+        "BpType": "GTT_SOLUTION_OWNER",
+        "BpName": "SAP Labs China",
+        "LbnId": "10010001084",
+        "ContactPerson_Id": "1cb99949-8cb9-413b-ad73-5e70e1489376",
+        "ContactPerson": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-413b-ad73-5e70e148937e')/ContactPerson"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Party",
+          "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-413b-ad73-5e70e148937e')"
+        }
+      },
+      {
+        "Id": "1cb99949-7cb9-413b-ad73-5e70e147937e",
+        "TenantId": "2cb99949-7cb9-413b-ad73-5e70e147937e",
+        "BpType": "GTT_SOLUTION_OWNER",
+        "BpName": "SAP Labs USA",
+        "LbnId": "10010001087",
+        "ContactPerson_Id": "1cb99949-8cb9-413b-ad73-5e70e1479378",
+        "ContactPerson": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-7cb9-413b-ad73-5e70e147937e')/ContactPerson"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Party",
+          "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-7cb9-413b-ad73-5e70e147937e')"
+        }
+      },
+      {
+        "Id": "2cb99949-8cb9-413b-ad73-5e70e148937e",
+        "TenantId": "3cb99949-7cb9-413b-ad73-5e70e147937e",
+        "BpType": "GTT_SOLUTION_OWNER",
+        "BpName": "SAP Labs India",
+        "LbnId": "10010001086",
+        "ContactPerson_Id": "1cb99949-8cb9-413b-ad73-5e70e1489379",
+        "ContactPerson": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'2cb99949-8cb9-413b-ad73-5e70e148937e')/ContactPerson"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Party",
+          "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'2cb99949-8cb9-413b-ad73-5e70e148937e')"
+        }
+      },
+      {
+        "Id": "1cb99949-8cb9-413b-ad73-5e70e148937f",
+        "TenantId": "2cb99949-8cb9-413b-ad73-5e70e148937f",
+        "BpType": "CARRIER",
+        "BpName": "DEPON Express",
+        "LbnId": "10010001085",
+        "ContactPerson_Id": null,
+        "ContactPerson": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-413b-ad73-5e70e148937f')/ContactPerson"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Party",
+          "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-413b-ad73-5e70e148937f')"
+        }
+      },
+      {
+        "Id": "1cb99949-8cb9-412b-ad73-5e70e148937f",
+        "TenantId": "2cb99949-8cb9-412b-ad73-5e70e148937f",
+        "BpType": "CARRIER",
+        "BpName": "SF Express",
+        "LbnId": "10010001085",
+        "ContactPerson_Id": null,
+        "ContactPerson": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-412b-ad73-5e70e148937f')/ContactPerson"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Party",
+          "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-412b-ad73-5e70e148937f')"
+        }
+      },
+      {
+        "Id": "1cb99949-8cb9-413b-ad73-5e70e1489399",
+        "TenantId": "2cb99949-8cb9-413b-ad73-5e70e1489399",
+        "BpType": "CARRIER",
+        "BpName": "FED Express",
+        "LbnId": "10010001087",
+        "ContactPerson_Id": null,
+        "ContactPerson": {
+          "__deferred": {
+            "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-413b-ad73-5e70e1489399')/ContactPerson"
+          }
+        },
+        "__metadata": {
+          "type": "ShipmentAdviceService.Party",
+          "uri": "http://localhost:4004/v2/shipment-advice/Party(guid'1cb99949-8cb9-413b-ad73-5e70e1489399')"
+        }
+      }
+    ]
+  }
+}

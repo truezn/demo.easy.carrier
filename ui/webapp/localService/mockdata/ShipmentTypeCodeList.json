@@ -1,0 +1,42 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('17')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('17')",
+          "type": "ShipmentAdviceService.ShipmentTypeCodeList"
+        },
+        "Code": "17",
+        "Name": "LTL (Less than Truckload)"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('18')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('18')",
+          "type": "ShipmentAdviceService.ShipmentTypeCodeList"
+        },
+        "Code": "18",
+        "Name": "FTL (Full Truckload)"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('2')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('2')",
+          "type": "ShipmentAdviceService.ShipmentTypeCodeList"
+        },
+        "Code": "2",
+        "Name": "LCL (Less than Container Load)"
+      },
+      {
+        "__metadata": {
+          "id": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('3')",
+          "uri": "http://localhost:80/sap/logistics/gtt/shipment-advice/odata/v1/ShipmentTypeCodeList('3')",
+          "type": "ShipmentAdviceService.ShipmentTypeCodeList"
+        },
+        "Code": "3",
+        "Name": "FCL (Full Container Load)"
+      }
+    ]
+  }
+}
